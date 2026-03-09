@@ -1,0 +1,171 @@
+id_incidente,id_viaje,fecha_incidente,tipo_incidente,ciudad,estado,indicador_de_falla,indicador_de_lesion,costo_vehiculo,costo_carga,monto_reclamacion_dolar,monto_reclamacion_eur,indicador_prevenible,nivel,causa
+INC00000001,TRIP00036079,2023-04-09 14:00:00,Infracción de tránsito,Columbus,PA,True,False,12629.26,0.0,12629.26,10745.56,True,Grave,Equipo
+INC00000002,TRIP00032462,2023-02-19 11:00:00,Infracción de tránsito,Columbus,NC,False,False,2700.7,14284.24,16984.94,14451.58,False,Grave,Clima
+INC00000003,TRIP00067583,2024-05-20 01:00:00,Queja del cliente,Seattle,OK,True,False,24302.32,0.0,24302.32,20677.55,True,Leve,Tráfico
+INC00000004,TRIP00049128,2023-09-26 03:00:00,Daño de equipo,Kansas City,TN,True,False,4879.13,0.0,4879.13,4151.39,True,Moderado,Equipo
+INC00000005,TRIP00062884,2024-03-20 14:00:00,Fallo mecánico o exceso horas permitidas,Las Vegas,IN,False,False,14951.4,0.0,14951.4,12721.35,False,Leve,Otro conductor
+INC00000006,TRIP00004361,2022-02-27 18:00:00,Daño de equipo,Oklahoma City,CO,False,True,0.0,0.0,0.0,0.0,False,Leve,Clima
+INC00000007,TRIP00012773,2022-06-13 02:00:00,Fallo mecánico o exceso horas permitidas,Portland,TX,True,False,12589.05,28315.16,40904.21,34803.21,True,Moderado,Tráfico
+INC00000008,TRIP00072329,2024-07-17 20:00:00,Accidente,Phoenix,TX,False,False,15572.01,0.0,15572.01,13249.39,False,Moderado,Equipo
+INC00000009,TRIP00043143,2023-07-08 02:00:00,Queja del cliente,Oklahoma City,TX,False,True,22283.17,379.1,22662.27,19282.12,False,Moderado,Tráfico
+INC00000010,TRIP00068700,2024-06-03 04:00:00,Daño de equipo,Detroit,PA,False,False,0.0,33901.9,33901.9,28845.32,False,Grave,Equipo
+INC00000011,TRIP00022792,2022-10-18 02:00:00,Daño de equipo,Milwaukee,NE,True,False,18252.77,0.0,18252.77,15530.31,True,Grave,Clima
+INC00000012,TRIP00048458,2023-09-16 03:00:00,Queja del cliente,Omaha,AZ,False,False,0.0,0.0,0.0,0.0,True,Grave,Equipo
+INC00000013,TRIP00055475,2023-12-16 18:00:00,Queja del cliente,Indianapolis,TX,False,True,0.0,0.0,0.0,0.0,True,Moderado,Equipo
+INC00000014,TRIP00045572,2023-08-10 17:00:00,Fallo mecánico o exceso horas permitidas,Portland,TN,False,False,0.0,0.0,0.0,0.0,False,Leve,Clima
+INC00000015,TRIP00043170,2023-07-08 02:00:00,Accidente,Atlanta,TN,False,False,4497.67,0.0,4497.67,3826.83,True,Moderado,Tráfico
+INC00000016,TRIP00033560,2023-03-07 03:00:00,Fallo mecánico o exceso horas permitidas,Chicago,AZ,True,False,3082.44,0.0,3082.44,2622.68,False,Moderado,Clima
+INC00000017,TRIP00078434,2024-10-05 04:00:00,Queja del cliente,Salt Lake City,NY,False,True,0.0,0.0,0.0,0.0,True,Grave,Equipo
+INC00000018,TRIP00051688,2023-10-27 13:00:00,Fallo mecánico o exceso horas permitidas,Miami,WI,False,True,9695.95,0.0,9695.95,8249.77,True,Grave,Clima
+INC00000019,TRIP00064255,2024-04-05 09:00:00,Accidente,Miami,TN,False,False,5672.35,0.0,5672.35,4826.3,True,Grave,Tráfico
+INC00000020,TRIP00005520,2022-03-11 09:00:00,Accidente,Milwaukee,WI,False,False,12824.5,0.0,12824.5,10911.68,False,Moderado,Clima
+INC00000021,TRIP00028811,2023-01-06 04:00:00,Infracción de tránsito,Portland,AZ,False,False,0.0,0.0,0.0,0.0,True,Leve,Otro conductor
+INC00000022,TRIP00030106,2023-01-20 04:00:00,Accidente,Houston,NY,False,False,19400.81,0.0,19400.81,16507.11,True,Leve,Tráfico
+INC00000023,TRIP00006542,2022-03-25 12:00:00,Accidente,Detroit,OH,False,False,3931.12,40113.96,44045.08,37475.61,False,Leve,Equipo
+INC00000024,TRIP00016403,2022-07-30 12:00:00,Queja del cliente,Charlotte,PA,False,False,2870.01,0.0,2870.01,2441.94,False,Moderado,Tráfico
+INC00000025,TRIP00074001,2024-08-07 10:00:00,Daño de equipo,Memphis,PA,False,True,22117.89,0.0,22117.89,18818.93,False,Moderado,Clima
+INC00000026,TRIP00064319,2024-04-08 06:00:00,Fallo mecánico o exceso horas permitidas,Los Angeles,CO,True,True,18303.46,0.0,18303.46,15573.44,False,Leve,Tráfico
+INC00000027,TRIP00012626,2022-06-12 10:00:00,Queja del cliente,Phoenix,GA,True,False,13379.62,2259.73,15639.35,13306.69,True,Leve,Equipo
+INC00000028,TRIP00079288,2024-10-13 16:00:00,Queja del cliente,Portland,MO,False,False,10006.92,0.0,10006.92,8514.35,False,Leve,Otro conductor
+INC00000029,TRIP00019840,2022-09-12 03:00:00,Daño de equipo,Los Angeles,FL,False,True,6121.59,24601.04,30722.63,26140.25,False,Grave,Otro conductor
+INC00000030,TRIP00033018,2023-02-28 03:00:00,Queja del cliente,Dallas,TN,False,False,3783.54,0.0,3783.54,3219.21,False,Grave,Tráfico
+INC00000031,TRIP00051725,2023-10-27 02:00:00,Daño de equipo,Minneapolis,IN,False,False,23296.79,0.0,23296.79,19821.99,False,Grave,Clima
+INC00000032,TRIP00068238,2024-05-27 06:00:00,Accidente,Philadelphia,WA,True,False,24614.16,0.0,24614.16,20942.87,False,Grave,Otro conductor
+INC00000033,TRIP00016176,2022-07-28 12:00:00,Fallo mecánico o exceso horas permitidas,Seattle,TX,False,False,17729.8,8080.5,25810.3,21960.61,True,Leve,Equipo
+INC00000034,TRIP00021253,2022-09-29 10:00:00,Fallo mecánico o exceso horas permitidas,Chicago,PA,False,False,14994.22,49251.5,64245.72,54663.25,False,Leve,Otro conductor
+INC00000035,TRIP00019719,2022-09-10 06:00:00,Daño de equipo,New York,TN,False,False,19624.96,0.0,19624.96,16697.83,False,Grave,Equipo
+INC00000036,TRIP00030657,2023-01-27 16:00:00,Fallo mecánico o exceso horas permitidas,New York,NC,False,False,22477.63,0.0,22477.63,19125.01,False,Leve,Equipo
+INC00000037,TRIP00042776,2023-07-04 01:00:00,Queja del cliente,Miami,WI,True,False,22667.73,0.0,22667.73,19286.76,False,Grave,Tráfico
+INC00000038,TRIP00022838,2022-10-19 12:00:00,Accidente,Chicago,MO,False,True,0.0,0.0,0.0,0.0,False,Moderado,Tráfico
+INC00000039,TRIP00080961,2024-11-05 23:00:00,Queja del cliente,Charlotte,CA,False,False,13425.42,376.13,13801.55,11743.0,True,Moderado,Equipo
+INC00000040,TRIP00021010,2022-09-27 07:00:00,Queja del cliente,Denver,CO,True,True,19633.39,0.0,19633.39,16705.0,False,Moderado,Equipo
+INC00000041,TRIP00043932,2023-07-19 19:00:00,Queja del cliente,Minneapolis,NC,False,False,24060.67,10999.07,35059.74,29830.46,False,Moderado,Clima
+INC00000042,TRIP00018651,2022-08-27 05:00:00,Infracción de tránsito,Memphis,TX,False,False,6561.35,36910.92,43472.27,36988.23,False,Grave,Otro conductor
+INC00000043,TRIP00081463,2024-11-12 09:00:00,Infracción de tránsito,Nashville,NV,False,False,16514.69,0.0,16514.69,14051.47,False,Leve,Clima
+INC00000044,TRIP00043850,2023-07-17 13:00:00,Fallo mecánico o exceso horas permitidas,Chicago,MI,True,False,13299.51,0.0,13299.51,11315.84,True,Leve,Clima
+INC00000045,TRIP00068665,2024-06-03 03:00:00,Fallo mecánico o exceso horas permitidas,Columbus,TN,True,True,0.0,0.0,0.0,0.0,False,Moderado,Otro conductor
+INC00000046,TRIP00013936,2022-06-28 09:00:00,Fallo mecánico o exceso horas permitidas,Chicago,MO,False,False,0.0,0.0,0.0,0.0,False,Moderado,Clima
+INC00000047,TRIP00014635,2022-07-09 18:00:00,Daño de equipo,Columbus,TN,True,True,12202.8,0.0,12202.8,10382.71,False,Leve,Equipo
+INC00000048,TRIP00073076,2024-07-27 12:00:00,Queja del cliente,Phoenix,IL,False,False,0.0,0.0,0.0,0.0,False,Moderado,Equipo
+INC00000049,TRIP00056337,2023-12-26 16:00:00,Daño de equipo,Memphis,GA,True,True,23165.07,0.0,23165.07,19709.92,False,Grave,Equipo
+INC00000050,TRIP00039757,2023-05-27 22:00:00,Daño de equipo,Houston,NV,True,False,0.0,0.0,0.0,0.0,True,Grave,Otro conductor
+INC00000051,TRIP00016308,2022-07-29 10:00:00,Accidente,Los Angeles,NV,False,False,5214.81,0.0,5214.81,4437.0,True,Leve,Otro conductor
+INC00000052,TRIP00080811,2024-11-03 08:00:00,Accidente,Los Angeles,NE,False,False,0.0,0.0,0.0,0.0,False,Leve,Otro conductor
+INC00000053,TRIP00036732,2023-04-15 02:00:00,Accidente,Houston,NV,False,False,852.1,0.0,852.1,725.01,False,Leve,Equipo
+INC00000054,TRIP00022029,2022-10-10 23:00:00,Accidente,Miami,UT,False,False,18809.17,0.0,18809.17,16003.72,False,Moderado,Tráfico
+INC00000055,TRIP00000271,2022-01-06 15:00:00,Daño de equipo,Phoenix,NY,True,True,23366.57,0.0,23366.57,19881.37,False,Grave,Equipo
+INC00000056,TRIP00069367,2024-06-11 15:00:00,Fallo mecánico o exceso horas permitidas,Chicago,NE,True,False,0.0,17112.08,17112.08,14559.75,False,Leve,Otro conductor
+INC00000057,TRIP00052380,2023-11-05 17:00:00,Infracción de tránsito,Charlotte,TN,True,True,0.0,0.0,0.0,0.0,True,Leve,Otro conductor
+INC00000058,TRIP00077372,2024-09-22 04:00:00,Fallo mecánico o exceso horas permitidas,Memphis,MN,True,True,24102.19,0.0,24102.19,20507.27,False,Leve,Otro conductor
+INC00000059,TRIP00068506,2024-05-29 11:00:00,Daño de equipo,Salt Lake City,NC,True,True,15019.37,0.0,15019.37,12779.18,True,Leve,Equipo
+INC00000060,TRIP00067707,2024-05-21 07:00:00,Accidente,Atlanta,IL,True,False,13414.05,0.0,13414.05,11413.3,False,Grave,Equipo
+INC00000061,TRIP00079871,2024-10-22 20:00:00,Infracción de tránsito,Salt Lake City,OR,False,False,18400.91,0.0,18400.91,15656.35,False,Moderado,Clima
+INC00000062,TRIP00075973,2024-09-04 21:00:00,Fallo mecánico o exceso horas permitidas,Salt Lake City,WA,False,False,7737.05,0.0,7737.05,6583.04,True,Leve,Otro conductor
+INC00000063,TRIP00008117,2022-04-17 17:00:00,Daño de equipo,Seattle,CA,True,False,6476.75,43698.11,50174.86,42691.11,False,Leve,Equipo
+INC00000064,TRIP00036527,2023-04-13 17:00:00,Fallo mecánico o exceso horas permitidas,Milwaukee,OH,False,False,0.0,0.0,0.0,0.0,False,Moderado,Tráfico
+INC00000065,TRIP00084686,2024-12-24 09:00:00,Accidente,Phoenix,OK,True,False,17783.76,0.0,17783.76,15131.25,True,Grave,Clima
+INC00000066,TRIP00010156,2022-05-10 12:00:00,Fallo mecánico o exceso horas permitidas,Salt Lake City,TN,False,False,18964.84,42214.25,61179.09,52054.02,True,Leve,Otro conductor
+INC00000067,TRIP00018047,2022-08-18 02:00:00,Fallo mecánico o exceso horas permitidas,Columbus,IN,True,False,0.0,0.0,0.0,0.0,True,Leve,Equipo
+INC00000068,TRIP00083177,2024-12-02 08:00:00,Infracción de tránsito,Denver,FL,True,False,16566.78,0.0,16566.78,14095.79,False,Leve,Clima
+INC00000069,TRIP00075012,2024-08-21 06:00:00,Fallo mecánico o exceso horas permitidas,Los Angeles,GA,True,False,15399.79,0.0,15399.79,13102.86,True,Leve,Tráfico
+INC00000070,TRIP00035290,2023-03-31 00:00:00,Daño de equipo,Charlotte,MI,False,False,0.0,47959.36,47959.36,40806.06,False,Moderado,Tráfico
+INC00000071,TRIP00057741,2024-01-15 17:00:00,Accidente,Chicago,GA,False,False,0.0,0.0,0.0,0.0,True,Leve,Tráfico
+INC00000072,TRIP00042350,2023-06-29 19:00:00,Fallo mecánico o exceso horas permitidas,Nashville,MN,False,False,0.0,0.0,0.0,0.0,True,Grave,Clima
+INC00000073,TRIP00074311,2024-08-11 07:00:00,Daño de equipo,Miami,CA,True,False,0.0,0.0,0.0,0.0,False,Moderado,Clima
+INC00000074,TRIP00010516,2022-05-17 09:00:00,Queja del cliente,Seattle,NE,True,False,0.0,0.0,0.0,0.0,True,Grave,Tráfico
+INC00000075,TRIP00029280,2023-01-11 08:00:00,Fallo mecánico o exceso horas permitidas,Salt Lake City,MO,True,False,0.0,0.0,0.0,0.0,False,Leve,Equipo
+INC00000076,TRIP00025439,2022-11-21 16:00:00,Daño de equipo,Phoenix,AZ,False,True,23775.81,0.0,23775.81,20229.57,False,Grave,Equipo
+INC00000077,TRIP00039355,2023-05-21 11:00:00,Daño de equipo,Memphis,UT,False,True,18884.39,29755.82,48640.21,41385.36,False,Moderado,Equipo
+INC00000078,TRIP00036751,2023-04-18 07:00:00,Infracción de tránsito,Las Vegas,GA,False,False,0.0,0.0,0.0,0.0,False,Grave,Otro conductor
+INC00000079,TRIP00017986,2022-08-18 01:00:00,Queja del cliente,Miami,IL,False,False,19373.44,0.0,19373.44,16483.83,False,Grave,Clima
+INC00000080,TRIP00001528,2022-01-21 17:00:00,Infracción de tránsito,Memphis,NC,False,False,1898.17,0.0,1898.17,1615.05,False,Leve,Equipo
+INC00000081,TRIP00000543,2022-01-08 22:00:00,Accidente,Seattle,CO,False,False,10725.67,0.0,10725.67,9125.9,False,Moderado,Clima
+INC00000082,TRIP00049352,2023-09-27 18:00:00,Infracción de tránsito,Philadelphia,CO,False,False,3391.18,35893.0,39284.18,33424.81,True,Leve,Equipo
+INC00000083,TRIP00014340,2022-07-04 02:00:00,Daño de equipo,Dallas,OH,False,False,0.0,8606.98,8606.98,7323.22,True,Moderado,Equipo
+INC00000084,TRIP00081150,2024-11-08 05:00:00,Daño de equipo,Salt Lake City,OR,True,False,0.0,0.0,0.0,0.0,False,Leve,Equipo
+INC00000085,TRIP00045060,2023-08-03 19:00:00,Accidente,Los Angeles,OH,False,False,0.0,0.0,0.0,0.0,True,Moderado,Tráfico
+INC00000086,TRIP00078852,2024-10-10 15:00:00,Fallo mecánico o exceso horas permitidas,Columbus,WI,False,False,0.0,0.0,0.0,0.0,True,Grave,Clima
+INC00000087,TRIP00031278,2023-02-04 09:00:00,Queja del cliente,Indianapolis,TX,False,False,0.0,0.0,0.0,0.0,False,Leve,Tráfico
+INC00000088,TRIP00030480,2023-01-26 03:00:00,Queja del cliente,Los Angeles,NC,False,True,12833.93,0.0,12833.93,10919.71,True,Moderado,Equipo
+INC00000089,TRIP00008529,2022-04-20 23:00:00,Fallo mecánico o exceso horas permitidas,Chicago,IL,False,False,4569.66,45853.75,50423.41,42902.59,False,Grave,Equipo
+INC00000090,TRIP00056229,2023-12-26 10:00:00,Accidente,Philadelphia,PA,False,False,0.0,0.0,0.0,0.0,False,Grave,Clima
+INC00000091,TRIP00070088,2024-06-18 15:00:00,Accidente,Milwaukee,NC,True,False,17306.77,0.0,17306.77,14725.41,True,Moderado,Clima
+INC00000092,TRIP00082508,2024-11-25 13:00:00,Accidente,Omaha,MO,False,False,21157.62,5222.46,26380.08,22445.4,False,Moderado,Equipo
+INC00000093,TRIP00073906,2024-08-07 17:00:00,Daño de equipo,Dallas,OK,False,False,14119.63,0.0,14119.63,12013.64,True,Leve,Otro conductor
+INC00000094,TRIP00030254,2023-01-23 10:00:00,Infracción de tránsito,Columbus,OH,False,False,9874.61,214.41,10089.02,8584.21,False,Grave,Equipo
+INC00000095,TRIP00082248,2024-11-21 16:00:00,Accidente,Memphis,NC,True,False,1279.18,0.0,1279.18,1088.39,False,Moderado,Otro conductor
+INC00000096,TRIP00072443,2024-07-18 17:00:00,Accidente,Atlanta,NE,False,True,3427.03,0.0,3427.03,2915.88,False,Moderado,Clima
+INC00000097,TRIP00082429,2024-11-24 11:00:00,Infracción de tránsito,Minneapolis,TX,False,False,9235.63,0.0,9235.63,7858.1,False,Moderado,Otro conductor
+INC00000098,TRIP00066619,2024-05-07 13:00:00,Queja del cliente,Portland,TN,False,False,8200.77,9329.09,17529.86,14915.22,True,Leve,Clima
+INC00000099,TRIP00033943,2023-03-11 14:00:00,Fallo mecánico o exceso horas permitidas,Columbus,AZ,False,False,0.0,0.0,0.0,0.0,True,Grave,Tráfico
+INC00000100,TRIP00081124,2024-11-07 13:00:00,Fallo mecánico o exceso horas permitidas,Minneapolis,PA,False,False,0.0,0.0,0.0,0.0,True,Moderado,Otro conductor
+INC00000101,TRIP00039856,2023-05-27 01:00:00,Accidente,Portland,NY,False,False,14754.02,15205.91,29959.93,25491.3,False,Grave,Clima
+INC00000102,TRIP00014527,2022-07-07 17:00:00,Daño de equipo,Oklahoma City,IN,True,False,21112.58,0.0,21112.58,17963.57,False,Grave,Otro conductor
+INC00000103,TRIP00059851,2024-02-11 03:00:00,Accidente,Phoenix,TX,False,False,0.0,0.0,0.0,0.0,True,Moderado,Clima
+INC00000104,TRIP00004735,2022-03-03 16:00:00,Infracción de tránsito,Oklahoma City,MI,True,False,3683.8,383.06,4066.86,3460.27,True,Grave,Otro conductor
+INC00000105,TRIP00073231,2024-07-30 21:00:00,Accidente,Salt Lake City,GA,False,False,9156.03,0.0,9156.03,7790.38,True,Grave,Otro conductor
+INC00000106,TRIP00061915,2024-03-09 07:00:00,Fallo mecánico o exceso horas permitidas,Detroit,IL,False,False,0.0,0.0,0.0,0.0,True,Leve,Otro conductor
+INC00000107,TRIP00017437,2022-08-12 19:00:00,Infracción de tránsito,Indianapolis,OH,True,False,0.0,0.0,0.0,0.0,True,Moderado,Tráfico
+INC00000108,TRIP00058951,2024-01-30 18:00:00,Accidente,Kansas City,TN,True,False,2738.59,0.0,2738.59,2330.12,False,Moderado,Tráfico
+INC00000109,TRIP00077861,2024-09-27 21:00:00,Accidente,Omaha,UT,False,True,0.0,49744.07,49744.07,42324.57,True,Grave,Otro conductor
+INC00000110,TRIP00046270,2023-08-17 09:00:00,Infracción de tránsito,Miami,PA,False,False,6524.27,0.0,6524.27,5551.15,False,Moderado,Tráfico
+INC00000111,TRIP00038286,2023-05-08 20:00:00,Daño de equipo,Los Angeles,TN,False,False,14176.42,32.85,14209.27,12089.91,False,Moderado,Tráfico
+INC00000112,TRIP00026765,2022-12-10 20:00:00,Infracción de tránsito,Dallas,MN,False,False,8635.87,0.0,8635.87,7347.8,True,Moderado,Clima
+INC00000113,TRIP00016392,2022-08-01 00:00:00,Fallo mecánico o exceso horas permitidas,Detroit,UT,True,False,837.51,0.0,837.51,712.59,True,Moderado,Equipo
+INC00000114,TRIP00001736,2022-01-23 04:00:00,Fallo mecánico o exceso horas permitidas,Houston,FL,True,False,11269.86,0.0,11269.86,9588.92,True,Leve,Tráfico
+INC00000115,TRIP00017173,2022-08-09 17:00:00,Queja del cliente,Detroit,TX,False,False,6982.35,0.0,6982.35,5940.91,False,Grave,Clima
+INC00000116,TRIP00008718,2022-04-22 01:00:00,Queja del cliente,Portland,TN,False,False,4300.84,0.0,4300.84,3659.36,False,Moderado,Clima
+INC00000117,TRIP00020003,2022-09-14 22:00:00,Infracción de tránsito,Kansas City,NY,False,False,0.0,0.0,0.0,0.0,False,Leve,Tráfico
+INC00000118,TRIP00009673,2022-05-04 02:00:00,Fallo mecánico o exceso horas permitidas,Phoenix,OH,False,False,3594.57,0.0,3594.57,3058.43,True,Moderado,Clima
+INC00000119,TRIP00081672,2024-11-14 11:00:00,Queja del cliente,Indianapolis,FL,False,True,19126.05,0.0,19126.05,16273.33,False,Grave,Clima
+INC00000120,TRIP00013764,2022-06-27 16:00:00,Queja del cliente,Seattle,TX,True,False,21722.31,0.0,21722.31,18482.35,False,Leve,Equipo
+INC00000121,TRIP00028932,2023-01-05 03:00:00,Daño de equipo,New York,TX,False,False,15928.79,0.0,15928.79,13552.96,False,Grave,Tráfico
+INC00000122,TRIP00013542,2022-06-23 16:00:00,Fallo mecánico o exceso horas permitidas,Atlanta,MN,False,True,18614.97,0.0,18614.97,15838.48,False,Grave,Clima
+INC00000123,TRIP00013736,2022-06-26 10:00:00,Accidente,Seattle,OR,False,False,21920.96,15568.53,37489.49,31897.8,True,Grave,Tráfico
+INC00000124,TRIP00013427,2022-06-23 00:00:00,Accidente,Omaha,MI,False,False,24566.39,0.0,24566.39,20902.23,True,Moderado,Equipo
+INC00000125,TRIP00057239,2024-01-09 16:00:00,Daño de equipo,Chicago,NE,True,False,2103.69,37531.43,39635.12,33723.41,False,Grave,Clima
+INC00000126,TRIP00060013,2024-02-12 03:00:00,Queja del cliente,Seattle,OR,False,False,9648.15,0.0,9648.15,8209.1,True,Moderado,Tráfico
+INC00000127,TRIP00042516,2023-07-01 07:00:00,Accidente,Chicago,TN,False,False,18690.01,0.0,18690.01,15902.33,False,Leve,Otro conductor
+INC00000128,TRIP00026426,2022-12-05 12:00:00,Infracción de tránsito,Phoenix,CO,True,True,19385.57,0.0,19385.57,16494.15,False,Moderado,Tráfico
+INC00000129,TRIP00053071,2023-11-15 21:00:00,Fallo mecánico o exceso horas permitidas,Dallas,NY,False,False,4321.13,34662.46,38983.59,33169.05,True,Grave,Tráfico
+INC00000130,TRIP00054280,2023-11-30 10:00:00,Infracción de tránsito,Dallas,AZ,True,False,19681.98,0.0,19681.98,16746.35,False,Moderado,Otro conductor
+INC00000131,TRIP00003278,2022-02-13 17:00:00,Daño de equipo,Columbus,FL,False,False,17099.92,0.0,17099.92,14549.41,False,Moderado,Otro conductor
+INC00000132,TRIP00077187,2024-09-18 08:00:00,Fallo mecánico o exceso horas permitidas,Memphis,NE,True,False,8811.67,41316.05,50127.72,42651.0,False,Moderado,Equipo
+INC00000133,TRIP00056589,2023-12-30 00:00:00,Daño de equipo,Detroit,TN,False,True,20190.09,0.0,20190.09,17178.67,False,Moderado,Otro conductor
+INC00000134,TRIP00073902,2024-08-08 22:00:00,Daño de equipo,Dallas,MO,False,False,19578.75,18583.37,38162.12,32470.11,False,Moderado,Otro conductor
+INC00000135,TRIP00024824,2022-11-13 15:00:00,Infracción de tránsito,Milwaukee,TX,True,False,17077.38,31507.48,48584.86,41338.26,True,Grave,Equipo
+INC00000136,TRIP00051721,2023-10-28 12:00:00,Infracción de tránsito,Chicago,MO,False,False,0.0,33681.19,33681.19,28657.53,True,Moderado,Equipo
+INC00000137,TRIP00021335,2022-10-02 21:00:00,Queja del cliente,Salt Lake City,CA,False,True,0.0,6225.41,6225.41,5296.87,True,Leve,Otro conductor
+INC00000138,TRIP00037168,2023-04-21 08:00:00,Queja del cliente,Philadelphia,TN,False,False,24239.68,0.0,24239.68,20624.25,False,Leve,Clima
+INC00000139,TRIP00018684,2022-08-29 18:00:00,Queja del cliente,Omaha,OH,False,True,0.0,4379.68,4379.68,3726.44,False,Moderado,Clima
+INC00000140,TRIP00065805,2024-04-26 15:00:00,Infracción de tránsito,Los Angeles,TX,False,False,17565.57,0.0,17565.57,14945.61,False,Grave,Tráfico
+INC00000141,TRIP00057477,2024-01-10 21:00:00,Fallo mecánico o exceso horas permitidas,Miami,OH,True,False,0.0,4607.3,4607.3,3920.11,False,Leve,Tráfico
+INC00000142,TRIP00030945,2023-01-31 03:00:00,Fallo mecánico o exceso horas permitidas,Charlotte,TN,True,False,7087.59,7470.49,14558.08,12386.69,False,Leve,Clima
+INC00000143,TRIP00059853,2024-02-09 15:00:00,Queja del cliente,Omaha,MO,False,False,21803.47,0.0,21803.47,18551.41,True,Moderado,Clima
+INC00000144,TRIP00061847,2024-03-08 21:00:00,Accidente,Miami,MI,False,False,0.0,0.0,0.0,0.0,True,Grave,Otro conductor
+INC00000145,TRIP00062754,2024-03-17 04:00:00,Infracción de tránsito,Omaha,UT,False,False,14995.98,0.0,14995.98,12759.28,False,Leve,Tráfico
+INC00000146,TRIP00033475,2023-03-05 21:00:00,Queja del cliente,Seattle,NE,False,False,0.0,0.0,0.0,0.0,True,Grave,Clima
+INC00000147,TRIP00001341,2022-01-18 06:00:00,Fallo mecánico o exceso horas permitidas,Atlanta,CO,False,False,12831.58,0.0,12831.58,10917.71,False,Leve,Otro conductor
+INC00000148,TRIP00077827,2024-09-28 00:00:00,Daño de equipo,Detroit,FL,False,False,7869.76,0.0,7869.76,6695.96,False,Leve,Clima
+INC00000149,TRIP00018371,2022-08-23 23:00:00,Fallo mecánico o exceso horas permitidas,Kansas City,OR,False,False,15647.86,2310.73,17958.59,15280.01,True,Moderado,Tráfico
+INC00000150,TRIP00007345,2022-04-07 23:00:00,Queja del cliente,Oklahoma City,OR,False,False,0.0,18410.14,18410.14,15664.2,False,Grave,Clima
+INC00000151,TRIP00058423,2024-01-23 01:00:00,Accidente,Milwaukee,WA,False,True,5762.54,0.0,5762.54,4903.04,False,Grave,Tráfico
+INC00000152,TRIP00024903,2022-11-15 00:00:00,Daño de equipo,Milwaukee,OH,True,False,0.0,0.0,0.0,0.0,False,Leve,Clima
+INC00000153,TRIP00038790,2023-05-13 08:00:00,Queja del cliente,Seattle,PA,True,True,15640.06,28390.39,44030.45,37463.16,False,Grave,Clima
+INC00000154,TRIP00065647,2024-04-25 03:00:00,Accidente,Miami,GA,True,False,21868.6,23572.73,45441.33,38663.6,False,Grave,Tráfico
+INC00000155,TRIP00023895,2022-11-02 18:00:00,Daño de equipo,Salt Lake City,IL,False,False,7673.56,0.0,7673.56,6529.02,False,Moderado,Clima
+INC00000156,TRIP00040023,2023-05-28 12:00:00,Infracción de tránsito,Indianapolis,IN,False,True,0.0,18911.94,18911.94,16091.16,True,Leve,Tráfico
+INC00000157,TRIP00035196,2023-03-29 00:00:00,Accidente,Columbus,MN,True,False,22050.56,0.0,22050.56,18761.64,False,Leve,Otro conductor
+INC00000158,TRIP00044214,2023-07-23 11:00:00,Queja del cliente,Denver,NC,False,False,18006.54,0.0,18006.54,15320.8,False,Moderado,Clima
+INC00000159,TRIP00016588,2022-08-03 01:00:00,Daño de equipo,Atlanta,OK,True,False,17785.05,44746.09,62531.14,53204.41,True,Grave,Otro conductor
+INC00000160,TRIP00074543,2024-08-17 07:00:00,Daño de equipo,Las Vegas,CA,False,False,10368.65,3080.69,13449.34,11443.33,True,Grave,Otro conductor
+INC00000161,TRIP00076246,2024-09-06 07:00:00,Accidente,Minneapolis,IN,False,False,0.0,0.0,0.0,0.0,False,Moderado,Otro conductor
+INC00000162,TRIP00063717,2024-04-01 14:00:00,Queja del cliente,Kansas City,OR,True,False,13452.82,0.0,13452.82,11446.29,False,Grave,Clima
+INC00000163,TRIP00057482,2024-01-12 22:00:00,Queja del cliente,Detroit,UT,False,True,0.0,0.0,0.0,0.0,False,Grave,Tráfico
+INC00000164,TRIP00000277,2022-01-05 02:00:00,Fallo mecánico o exceso horas permitidas,Houston,NV,True,False,12983.51,0.0,12983.51,11046.98,False,Moderado,Equipo
+INC00000165,TRIP00050936,2023-10-18 01:00:00,Infracción de tránsito,Denver,OH,False,True,0.0,33733.85,33733.85,28702.33,False,Leve,Equipo
+INC00000166,TRIP00066718,2024-05-09 08:00:00,Fallo mecánico o exceso horas permitidas,Houston,PA,False,False,0.0,0.0,0.0,0.0,False,Moderado,Tráfico
+INC00000167,TRIP00039570,2023-05-23 07:00:00,Daño de equipo,Miami,GA,False,False,0.0,20745.08,20745.08,17650.88,False,Moderado,Otro conductor
+INC00000168,TRIP00000532,2022-01-08 17:00:00,Fallo mecánico o exceso horas permitidas,Kansas City,NV,False,False,6355.71,0.0,6355.71,5407.73,False,Moderado,Tráfico
+INC00000169,TRIP00068312,2024-05-27 00:00:00,Daño de equipo,Dallas,MI,False,False,23060.0,19477.23,42537.23,36192.66,True,Moderado,Equipo
+INC00000170,TRIP00036297,2023-04-12 04:00:00,Infracción de tránsito,Memphis,NY,False,False,0.0,0.0,0.0,0.0,False,Grave,Otro conductor
