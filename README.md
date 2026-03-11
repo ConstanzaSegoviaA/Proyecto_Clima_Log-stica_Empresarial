@@ -85,6 +85,7 @@ El análisis técnico se divide en:
 - EDA (Análisis Exploratorio): Visualización de distribuciones y correlaciones.
 - Modelado OLS: Construcción del modelo de regresión para identificar significancia estadística (P-values).
 - Validación: Verificación de supuestos de linealidad y normalidad.
+
 ---
 <a id="sql"></a>
 ## Carpeta: SQL
@@ -95,13 +96,14 @@ Contiene los scripts SQL para la creación del esquema de base de datos y consul
 <a id="power-bi"></a>
 ## Carpeta: Power BI
 Archivo .pbix con el dashboard interactivo que visualiza la tasa de incidentes, costos por clima y desempeño por ciudad.
+
 ---
 <a id="analisis-kpis"></a>
 ## Análisis de KPIs e hipótesis
 
 En la carpeta se encuentra el análisis de KPIs e hipótesis planteadas en el proyecto.
----
 
+---
 <a id="resultados-insights"></a>
 ## Resultados / Insights
 
@@ -109,14 +111,16 @@ En la carpeta se encuentra el análisis de KPIs e hipótesis planteadas en el pr
 
 Los hallazgos más relevantes del proyecto son:
 
-El "Retraso Base" es Estructural: Se descubrió una constante estadística de ~72-79 minutos que ocurre independientemente de cualquier variable externa. El problema es el proceso inicial de despacho.
-El Peso no influye: Con un p-valor de 0.557, se descarta que el peso de la carga afecte los tiempos de entrega.
-Sensibilidad Térmica: El frío impacta más que el calor; las bajas temperaturas correlacionan con mayores demoras.
-Visibilidad: Es el factor meteorológico más crítico para la seguridad y el cumplimiento de horarios.
+- El "Retraso Base" es Estructural: Se descubrió una constante estadística de ~72-79 minutos que ocurre independientemente de cualquier variable externa. El problema es el proceso inicial de despacho.
+- El Peso no influye: Con un p-valor de 0.557, se descarta que el peso de la carga afecte los tiempos de entrega.
+- Sensibilidad Térmica: El frío impacta más que el calor; las bajas temperaturas correlacionan con mayores demoras.
+- Visibilidad: Es el factor meteorológico más crítico para la seguridad y el cumplimiento de horarios.
 
 
 
 **Insights derivados directamente del estudio**
+
+Resumen:
 
 - Este proyecto demuestra que la ineficiencia logística en la red analizada no es una consecuencia inevitable del clima o de factores externos azarosos, sino un problema estructural de planificación.
 Con un 77% de retrasos constantes y un retraso base de ~75 minutos identificado mediante el modelo OLS, la oportunidad de mejora no reside en "esperar mejores días", sino en rediseñar los procesos de despacho y optimizar el uso de combustible (ralentí). La evidencia estadística recolectada proporciona la hoja de ruta clara para transformar estas pérdidas operativas en ventajas competitivas.
