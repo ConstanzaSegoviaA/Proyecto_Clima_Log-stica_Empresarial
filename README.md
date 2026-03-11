@@ -1,4 +1,5 @@
-# Proyecto : Análisis de Retrasos en la Logística Empresarial (EE.UU.)
+# Proyecto : 
+# Análisis de retrasos en la logística empresarial 
 
 Este proyecto aplica modelos de regresión lineal multivariante (OLS) y análisis de datos avanzado para identificar las causas de los retrasos en una red logística de 7 ciudades de Estados Unidos (Detroit, Los Angeles, Nueva York, Miami, Houston, Portland y Kansas City). El análisis diferencia entre factores ambientales, operativos y estructurales para optimizar la toma de decisiones.
 
@@ -157,4 +158,4 @@ Orden recomendado:
 5. Tercero, abrir la carpeta SQL y ejecutar el archivo `estudio.sql` para crear las tablas en la base de datos de `incidentes.csv` y `UNION.csv`.
 6. Con esos archivos SQL, abrir la carpeta Notebooks en la subcarpeta ANALISIS el archivo `analisis.ipynb` y ejecutarlo desde el inicio ahí realizaremos el análisis de los datos y generaremos los insights para poder hacer el estudio de Hipótesis.
 7. Siguiente, abrir la carpeta Notebooks en la subcarpeta HIPOTESIS_KPI el archivo `Hipotesis_KPI.ipynb` y ejecutarlo desde el inicio ahí realizaremos el análisis de las hipótesis y llegamos a las conclusiones del proyecto.
-8. Finalizamos el proyecto con la carpeta  Notebooks abrimos el archivo `Dashboard.pbix` y ejecutamos el archivo o bien abrir la página web [Dashboard_Clima_Logistica](https:///).
+8. Finalizamos el proyecto con la carpeta  Notebooks abrimos el archivo `Dashboard_Logistica.pbix` y ejecutamos el archivo o bien abrir la página web [Dashboard_Logistica](https://app.powerbi.com/groups/me/reports/c2dc3e28-9df6-4c42-9a8d-9cea6927b916/10d29b5abb5614846d12?experience=power-bi).
