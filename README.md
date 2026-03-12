@@ -225,7 +225,7 @@ En esta carpeta encontraras:
 En la carpeta de HIPOTESIS_KPI en el archivo `Hipotesis_KPI.ipynb` se encuentra el análisis detallado del estudio, se adjunta el detalle del  KPIs e hipótesis planteadas en el proyecto.
 
 ### Análisis KPIs:
-- KPI 1: Tiempo de entrega promedio: comparamos fecha programada vs fecha real
+- KPI 1: Tiempo promedio de retraso: comparamos fecha programada vs fecha real
 - KPI 2: Tiempo de retraso: Promedio de la diferencia entre el retraso y las condiciones climáticas
 - KPI 3: Relación impacto clima vs costo: Comparamos el impacto del clima versus el costo logístico asociado.
 - KPI 4: Frecuencia de incidentes según el tipo de precipitación: de los incidentes identificados, se analiza la frecuencia según el tipo de precipitación y se determina la causa.
