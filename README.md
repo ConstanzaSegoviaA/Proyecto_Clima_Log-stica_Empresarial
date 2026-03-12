@@ -1,7 +1,7 @@
 # Proyecto : 
-# Análisis de retrasos en la logística empresarial 
+"Más allá del reloj: análisis multivariante de la logística empresarial estadounidense"
 
-Este proyecto aplica modelos de regresión lineal multivariante (OLS) y análisis de datos avanzado para identificar las causas de los retrasos en una red logística de 7 ciudades de Estados Unidos (Detroit, Los Angeles, Nueva York, Miami, Houston, Portland y Kansas City). El análisis diferencia entre factores ambientales, operativos y estructurales para optimizar la toma de decisiones.
+Este proyecto descompone la complejidad de los retrasos en la cadena de suministro mediante un modelo de regresión lineal multivariante (OLS). Al analizar siete nodos estratégicos, desde el dinamismo industrial de Detroit y Houston hasta los puntos de entrada clave en Nueva York, Miami y Los Ángeles, sin olvidar la conectividad de Portland y Kansas City, la investigación logra aislar el peso real de las variables ambientales, operativas y estructurales. El resultado es una herramienta diagnóstica que transforma datos crudos en decisiones tácticas para optimizar la puntualidad.
 
 **Autora: Constanza Segovia Aspee**
 
@@ -57,35 +57,139 @@ El problema es que a pesar de tener rutas estandarizadas, los retrasos promedio 
 
 **Fuentes de datos**
 
-- 66,146 registros operativos procesados.
-- Datos climáticos históricos integrados vía API.
+Detallaremos de donde sacamos los datos relevantes de nuestro análisis. 
+- Primero: Dataset de operaciones logísticas de la empresa es tomado de Kaggle. Este entrega 14 data set de los cuales se seleccionan 7 para el análisis sobre como influyen los diferentes factores en los retrasos de los eventos de carga y descarga.
+Cada data set tiene sus características propias:
+   1. `eventos_entregas.csv`: se tienen 170 820 datos de los cuales nos quedamos con los eventos de carga y descarga de las 7 ciudades que hemos elegido por su ubicación geográfica y por su cantidad de habitantes, quedando con 66 416 eventos.
+   2. `viajes.csv`: 
+   3. `cargas.csv`:
+   4. `clientes.csv`:
+   5. `rutas.csv`:
+   6. `compras_combustible.csv`:
+   7. `incidentes_seguridad.csv`:
+
+- Segundo: Datos climáticos históricos integrados vía API de la página [Visual Crossing](https://www.visualcrossing.com/) donde descargamos los datos desde 01-01-2022 hasta 02-01-2025 de las 7 ciudades seleccionadas, obteniendo datos de temperatura, humedad, precipitación, viento, etc. Como las descargas gratuitas tienen un límite de 1000 requests por día, se tuvo que descargar los datos en partes, quedando un total de 7 672 registros de clima en el dataset `Clima.csv`.
 
 **Diccionario de datos**
 
-Variables de las columnas:
+Variables de las columnas del data set final de estudio, que se trabajo para las visualizaciones:
 
-`género`= género (Femenino/Masculino)
-
-
+`id_evento` ID único del evento
+`ciudad` Ciudad de origen
+`tipo_evento` Tipo de evento (carga, descarga)
+`fecha_hora_programada` Fecha y hora programada del evento
+`fecha_hora_real` Fecha y hora real del evento
+`retraso_minutos` Minutos de retraso del evento
+`minutos_de_detencion` Minutos de detención del evento
+`tem_max_C` Temperatura máxima del día en grados Celsius
+`tem_min_C` Temperatura mínima del día en grados Celsius
+`tem_C` Temperatura promedio del día en grados Celsius
+`rocio_C` Punto de rocío del día en grados Celsius
+`humedad_pct` Humedad relativa del día en porcentaje
+`precip_mm` Precipitación del día en milímetros
+`tipo_precip` Tipo de precipitación del día
+`nieve_mm` Nieve del día en milímetros
+`prof_nieve_mm` Profundidad de nieve del día en milímetros
+`dir_viento_gr` Dirección del viento del día en grados
+`nubosidad_pct` Nubosidad del día en porcentaje
+`visibilidad_km` Visibilidad del día en kilómetros
+`riesgo_severo` Riesgo severo del día
+`condiciones` Condiciones del día
+`ciudad_origen` Ciudad de origen
+`ciudad_destino` Ciudad de destino
+`distancia_tipica_millas` Distancia típica en millas
+`distancia_km` Distancia en kilómetros
+`tarifa_base_milla_eur` Tarifa base por milla en euros
+`tasa_de_recargo_combustible` Tasa de recargo por combustible
+`dias_de_transito_tipicos` Días típicos de tránsito
+`nombre_cliente` Nombre del cliente
+`tipo_cliente` Tipo de cliente
+`tipo_carga_principal` Tipo de carga principal
+`ingreso_eur` Ingreso en euros
+`fecha_despacho` Fecha de despacho
+`distancia_viaje` Distancia del viaje
+`duracion_real_horas` Duración real en horas
+`galones_combustible_usados` Galones de combustible usados
+`mpg_promedio` MPG promedio
+`horas_de_ralenti_RPM` Horas de ralentí en RPM
+`fecha_carga` Fecha de carga
+`tipo_carga` Tipo de carga
+`peso_kg` Peso en kilogramos
+`eur_carga` Carga en euros
+`recargo_combustible` Recargo por combustible
+`cargos_accesorios` Cargos por accesorios en euros
+`tipo_reserva` Tipo de reserva
+`a_tiempo` Si el despacho fue a tiempo si o no
+`categoria_riesgo` Categoría de riesgo
+`hora_dia` Hora del día en el que ocurrió el evento
+`turno` Turno de noche (18:00 - 06:00) o de día (06:00 - 18:00)
+`costo_logistico_total` Costo logístico total
+`costo_por_km` Costo por kilómetro en euros
+`hubo_incidente` Si hubo incidente si o no
+`tipo_incidente` Tipo de incidente
+`monto_reclamacion_eur` Monto de reclamación en euros
+`causa` Causa del incidente
+`clima_eficiencia` Eficiencia del clima
+`ralenti_norm` Ralentí normalizado
 
 ---
 
 <a id="api_clima"></a>
 ## Carpeta: API_clima
 
-Contiene los scripts de conexión, descarga de los data set de trabajo para el clima de estudio de las 7 ciudades y todos los datos meteorológicos disponibles. 
-
+En esta carpeta te encontraras con: 
+- `APIclima.ipynb`: Aqui se realiza la descarga de los datos climáticos históricos vía API de Visual Crossing, debes tener una cuenta en la página para obtener la key de la API.
+- `Clima.csv`: Dataset final con todos los datos climáticos históricos descargados.
+- `delivery_events.csv`: Dataset con los eventos de entrega y las ciudades seleccionadas para el análisis.
+- `Funciones.py`: Funciones auxiliares para el análisis de datos, cambio de variables o limpieza de datos.
+- `houston.csv`: Dataset con los datos climáticos de Houston.
+- `union_clima.csv`: Dataset con la unión de los datos climáticos de algunas ciudades.
+- `union_final.csv`: Dataset con la unión de los datos climáticos de ciudades faltantes.
 
 ---
 <a id="notebook"></a>
 ## Carpeta: Notebook
 
-Incluye el proceso de
-El análisis técnico se divide en:
-- Limpieza de datos: Manejo de nulos y estandarización de unidades.
-- EDA (Análisis Exploratorio): Visualización de distribuciones y correlaciones.
-- Modelado OLS: Construcción del modelo de regresión para identificar significancia estadística (P-values).
-- Validación: Verificación de supuestos de linealidad y normalidad.
+En esta carpeta te encontraras con: 
+
+- subcarpeta `ANALISIS`: aqui encontraras los siguientes archivos:
+
+  - `analisis.ipynb`: Análisis de los datos en diversas dimensiones con los resultados obtenidos de SQL query.
+  - `data_final.csv`: Dataset con los datos de logística resultado de los analisis realizados y otras nuevas categorías creadas.
+  - `Funciones.py`: Funciones auxiliares para el análisis de datos climáticos, cambio de variables o limpieza de datos.
+  - `incidentes.csv`: Dataset con los resultados de SQL query.
+  - `UNION.csv`: Dataset con la unión de los datos de logística de SQL query.
+
+- subcarpeta `HIPOTESIS_KPI`: aqui encontraras los siguientes archivos:
+
+  - `data_final.csv`: Dataset con los datos de logística resultado de los analisis realizados y otras nuevas categorías creadas en los análisis.
+  - `Funciones.py`: Funciones auxiliares para el análisis de datos, cambio de variables o limpieza de datos.
+  - `df_final_analisis.csv`: Dataset con los datos de análisis de KPIs y de las hipótesis.
+  - `diagrama.png`: Diagrama de flujo de los datos utilizados en SQL.
+  - `Hipotesis_KPI.ipynb`: Análisis de las hipótesis, KPIs y modelos (OLS).
+  - `incidentes.csv`: Dataset con los resultados de las SQL query.
+
+- subcarpeta `LIMPIEZA`: aqui encontraras los siguientes archivos:
+
+  - `Limpieza_union.ipynb`: Limpieza de los datos de la unión de los datos climáticos con los eventos y de todos los datasets para llevarlos limpios y traducidos a SQL.
+  - `df_carga_estudio.csv`: Dataset con los datos limpios y listos para SQL.
+  - `df_clientes_estudio.csv`: Dataset con los datos limpios y listos para SQL.
+  - `df_combustible_estudio.csv`: Dataset con los datos limpios y listos para SQL.
+  - `df_incidente_estudio.csv`: Dataset con los datos limpios y listos para SQL.
+  - `df_rutas_estudio.csv`: Dataset con los datos limpios y listos para SQL.
+  - `df_union_estudio.csv`: Dataset con los datos limpios y listos para SQL.
+  - `df_viajes_estudio.csv`: Dataset con los datos limpios y listos para SQL.
+  - `Funciones.py`: Funciones auxiliares para el análisis de datos, cambio de variables o limpieza de datos.
+  - subcarpeta `data`: aqui encontraras los siguientes archivos:
+
+    - `cargas.csv`: Dataset original en inglés sin limpiar.
+    - `Clima.csv`: Dataset original en inglés sin limpiar.
+    - `clientes.csv`: Dataset original en inglés sin limpiar.
+    - `compras_combustible.csv`: Dataset original en inglés sin limpiar.
+    - `incidentes_seguridad.csv`: Dataset original en inglés sin limpiar.
+    - `rutas.csv`: Dataset original en inglés sin limpiar.
+    - `eventos_entregas.csv`: Dataset original en inglés sin limpiar.
+    - `viajes.csv`: Dataset original en inglés sin limpiar.
 
 ---
 <a id="sql"></a>
@@ -96,13 +200,16 @@ Contiene los scripts SQL para la creación del esquema de base de datos y consul
 ---
 <a id="power-bi"></a>
 ## Carpeta: Power BI
-Archivo .pbix con el dashboard interactivo que visualiza la tasa de incidentes, costos por clima y desempeño por ciudad.
+
+En esta carpeta encontraras: 
+- `Dashboard_Logistica.pbix`: el dashboard interactivo que visualiza los incidentes, los costos por clima y el desempeño por ciudad. Es la presentación final del proyecto. Que se puede abrir directamente en Power BI en este link ["Más alla del reloj"](https://app.powerbi.com/groups/13000000-0000-0000-0000-000000000000/reports/12345678-1234-1234-1234-1234567890ab/ReportSection1234567890ab?experience=power-bi)
+- `df_final_analisis.csv`: el dataset final con los datos limpios y listos para el dashboard.
 
 ---
 <a id="analisis-kpis"></a>
 ## Análisis de KPIs e hipótesis
 
-En la carpeta se encuentra el análisis de KPIs e hipótesis planteadas en el proyecto.
+En la carpeta de HIPOTESIS_KPI en el archivo `Hipotesis_KPI.ipynb` se encuentra el análisis detallado del estudio, se adjunta el detalle del  KPIs e hipótesis planteadas en el proyecto.
 
 ---
 <a id="resultados-insights"></a>
@@ -158,4 +265,4 @@ Orden recomendado:
 5. Tercero, abrir la carpeta SQL y ejecutar el archivo `estudio.sql` para crear las tablas en la base de datos de `incidentes.csv` y `UNION.csv`.
 6. Con esos archivos SQL, abrir la carpeta Notebooks en la subcarpeta ANALISIS el archivo `analisis.ipynb` y ejecutarlo desde el inicio ahí realizaremos el análisis de los datos y generaremos los insights para poder hacer el estudio de Hipótesis.
 7. Siguiente, abrir la carpeta Notebooks en la subcarpeta HIPOTESIS_KPI el archivo `Hipotesis_KPI.ipynb` y ejecutarlo desde el inicio ahí realizaremos el análisis de las hipótesis y llegamos a las conclusiones del proyecto.
-8. Finalizamos el proyecto con la carpeta  Notebooks abrimos el archivo `Dashboard_Logistica.pbix` y ejecutamos el archivo o bien abrir la página web [Dashboard_Logistica](https://app.powerbi.com/groups/me/reports/c2dc3e28-9df6-4c42-9a8d-9cea6927b916/10d29b5abb5614846d12?experience=power-bi).
+8. Finalizamos el proyecto con la carpeta  Notebooks abrimos el archivo `Dashboard_Logistica.pbix` y ejecutamos el archivo o bien abrir la página web [Dashboard_Logistica](https://app.powerbi.com/groups/me/reports/0f356bfb-4040-43ca-a716-4d53d6f4dc8b/1c4bdc23041da9952e57?experience=power-bi).
