@@ -73,63 +73,63 @@ Cada data set tiene sus características propias:
 
 Variables de las columnas del data set final de estudio, que se trabajo para las visualizaciones:
 
-`id_evento` ID único del evento
-`ciudad` Ciudad de origen
-`tipo_evento` Tipo de evento (carga, descarga)
-`fecha_hora_programada` Fecha y hora programada del evento
-`fecha_hora_real` Fecha y hora real del evento
-`retraso_minutos` Minutos de retraso del evento
-`minutos_de_detencion` Minutos de detención del evento
-`tem_max_C` Temperatura máxima del día en grados Celsius
-`tem_min_C` Temperatura mínima del día en grados Celsius
-`tem_C` Temperatura promedio del día en grados Celsius
-`rocio_C` Punto de rocío del día en grados Celsius
-`humedad_pct` Humedad relativa del día en porcentaje
-`precip_mm` Precipitación del día en milímetros
-`tipo_precip` Tipo de precipitación del día
-`nieve_mm` Nieve del día en milímetros
-`prof_nieve_mm` Profundidad de nieve del día en milímetros
-`dir_viento_gr` Dirección del viento del día en grados
-`nubosidad_pct` Nubosidad del día en porcentaje
-`visibilidad_km` Visibilidad del día en kilómetros
-`riesgo_severo` Riesgo severo del día
-`condiciones` Condiciones del día
-`ciudad_origen` Ciudad de origen
-`ciudad_destino` Ciudad de destino
-`distancia_tipica_millas` Distancia típica en millas
-`distancia_km` Distancia en kilómetros
-`tarifa_base_milla_eur` Tarifa base por milla en euros
-`tasa_de_recargo_combustible` Tasa de recargo por combustible
-`dias_de_transito_tipicos` Días típicos de tránsito
-`nombre_cliente` Nombre del cliente
-`tipo_cliente` Tipo de cliente
-`tipo_carga_principal` Tipo de carga principal
-`ingreso_eur` Ingreso en euros
-`fecha_despacho` Fecha de despacho
-`distancia_viaje` Distancia del viaje
-`duracion_real_horas` Duración real en horas
-`galones_combustible_usados` Galones de combustible usados
-`mpg_promedio` MPG promedio
-`horas_de_ralenti_RPM` Horas de ralentí en RPM
-`fecha_carga` Fecha de carga
-`tipo_carga` Tipo de carga
-`peso_kg` Peso en kilogramos
-`eur_carga` Carga en euros
-`recargo_combustible` Recargo por combustible
-`cargos_accesorios` Cargos por accesorios en euros
-`tipo_reserva` Tipo de reserva
-`a_tiempo` Si el despacho fue a tiempo si o no
-`categoria_riesgo` Categoría de riesgo
-`hora_dia` Hora del día en el que ocurrió el evento
-`turno` Turno de noche (18:00 - 06:00) o de día (06:00 - 18:00)
-`costo_logistico_total` Costo logístico total
-`costo_por_km` Costo por kilómetro en euros
-`hubo_incidente` Si hubo incidente si o no
-`tipo_incidente` Tipo de incidente
-`monto_reclamacion_eur` Monto de reclamación en euros
-`causa` Causa del incidente
-`clima_eficiencia` Eficiencia del clima
-`ralenti_norm` Ralentí normalizado
+- `id_evento`: ID único del evento
+- `ciudad`: Ciudad de origen
+- `tipo_evento`: Tipo de evento (carga, descarga)
+- `fecha_hora_programada`: Fecha y hora programada del evento
+- `fecha_hora_real`: Fecha y hora real del evento
+- `retraso_minutos`: Minutos de retraso del evento
+- `minutos_de_detencion`: Minutos de detención del evento
+- `tem_max_C`: Temperatura máxima del día en grados Celsius
+- `tem_min_C`: Temperatura mínima del día en grados Celsius
+- `tem_C`: Temperatura promedio del día en grados Celsius
+- `rocio_C`: Punto de rocío del día en grados Celsius
+- `humedad_pct`: Humedad relativa del día en porcentaje
+- `precip_mm`: Precipitación del día en milímetros
+- `tipo_precip`: Tipo de precipitación del día
+- `nieve_mm`: Nieve del día en milímetros
+- `prof_nieve_mm`: Profundidad de nieve del día en milímetros
+- `dir_viento_gr`: Dirección del viento del día en grados
+- `nubosidad_pct`: Nubosidad del día en porcentaje
+- `visibilidad_km`: Visibilidad del día en kilómetros
+- `riesgo_severo`: Riesgo severo del día
+- `condiciones`: Condiciones del día
+- `ciudad_origen`: Ciudad de origen
+- `ciudad_destino`: Ciudad de destino
+- `distancia_tipica_millas`: Distancia típica en millas
+- `distancia_km`: Distancia en kilómetros
+- `tarifa_base_milla_eur`: Tarifa base por milla en euros
+- `tasa_de_recargo_combustible`: Tasa de recargo por combustible
+- `dias_de_transito_tipicos`: Días típicos de tránsito
+- `nombre_cliente`: Nombre del cliente
+- `tipo_cliente`: Tipo de cliente
+- `tipo_carga_principal`: Tipo de carga principal
+- `ingreso_eur`: Ingreso en euros
+- `fecha_despacho`: Fecha de despacho
+- `distancia_viaje`: Distancia del viaje
+- `duracion_real_horas`: Duración real en horas
+- `galones_combustible_usados`: Galones de combustible usados
+- `mpg_promedio`: MPG promedio
+- `horas_de_ralenti_RPM`: Horas de ralentí en RPM
+- `fecha_carga`: Fecha de carga
+- `tipo_carga`: Tipo de carga
+- `peso_kg`: Peso en kilogramos
+- `eur_carga`: Carga en euros
+- `recargo_combustible`: Recargo por combustible
+- `cargos_accesorios`: Cargos por accesorios en euros
+- `tipo_reserva`: Tipo de reserva
+- `a_tiempo`: Si el despacho fue a tiempo si o no
+- `categoria_riesgo`: Categoría de riesgo
+- `hora_dia`: Hora del día en el que ocurrió el evento
+- `turno`: Turno de noche (18:00 - 06:00) o de día (06:00 - 18:00)
+- `costo_logistico_total`: Costo logístico total
+- `costo_por_km`: Costo por kilómetro en euros
+- `hubo_incidente`: Si hubo incidente si o no
+- `tipo_incidente`: Tipo de incidente
+- `monto_reclamacion_eur`: Monto de reclamación en euros
+- `causa`: Causa del incidente
+- `clima_eficiencia`: Eficiencia del clima
+- `ralenti_norm`: Ralentí normalizado
 
 ---
 
