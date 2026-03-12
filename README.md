@@ -12,13 +12,12 @@ Este proyecto descompone la complejidad de los retrasos en la cadena de suminist
 1. [Objetivo](#objetivo)
 2. [Instalación](#instalacion)
 3. [Contexto de negocio](#contexto-negocio)
-4. [Estructura del proyecto](#estructura-proyecto)
-5. [Dataset ](#dataset)
-6. [Carpeta: API_clima](#api-clima)
-7. [Carpeta: Notebook](#notebook)
-8. [Carpeta: SQL](#sql)
-9. [Carpeta: Power BI](#power-bi)
-10. [Análisis de KPIs e hipótesis](#analisis-kpis)
+4. [Dataset ](#dataset)
+5. [Carpeta: API_clima](#api-clima)
+6. [Carpeta: Notebook](#notebook)
+7. [Carpeta: SQL](#sql)
+8. [Carpeta: Power BI](#power-bi)
+9. [Análisis de KPIs e hipótesis](#analisis-kpis)
 11. [Resultados/Insights](#resultados-insights)
 12. [Limitaciones y próximos pasos](#limitaciones-proximos-pasos)
 13. [Cómo replicar el proyecto](#como-replicar)
@@ -202,7 +201,7 @@ Contiene los scripts SQL para la creación del esquema de base de datos y consul
 ## Carpeta: Power BI
 
 En esta carpeta encontraras: 
-- `Dashboard_Logistica.pbix`: el dashboard interactivo que visualiza los incidentes, los costos por clima y el desempeño por ciudad. Es la presentación final del proyecto. Que se puede abrir directamente en Power BI en este link ["Más alla del reloj"](https://app.powerbi.com/groups/13000000-0000-0000-0000-000000000000/reports/12345678-1234-1234-1234-1234567890ab/ReportSection1234567890ab?experience=power-bi)
+- `Dashboard_Logistica.pbix`: el dashboard interactivo que visualiza los incidentes, los costos por clima y el desempeño por ciudad. Es la presentación final del proyecto. Que se puede abrir directamente en Power BI en este link ["Más alla del reloj"](https://app.powerbi.com/groups/me/reports/0f356bfb-4040-43ca-a716-4d53d6f4dc8b/1c4bdc23041da9952e57?experience=power-bi)
 - `df_final_analisis.csv`: el dataset final con los datos limpios y listos para el dashboard.
 
 ---
@@ -265,4 +264,4 @@ Orden recomendado:
 5. Tercero, abrir la carpeta SQL y ejecutar el archivo `estudio.sql` para crear las tablas en la base de datos de `incidentes.csv` y `UNION.csv`.
 6. Con esos archivos SQL, abrir la carpeta Notebooks en la subcarpeta ANALISIS el archivo `analisis.ipynb` y ejecutarlo desde el inicio ahí realizaremos el análisis de los datos y generaremos los insights para poder hacer el estudio de Hipótesis.
 7. Siguiente, abrir la carpeta Notebooks en la subcarpeta HIPOTESIS_KPI el archivo `Hipotesis_KPI.ipynb` y ejecutarlo desde el inicio ahí realizaremos el análisis de las hipótesis y llegamos a las conclusiones del proyecto.
-8. Finalizamos el proyecto con la carpeta  Notebooks abrimos el archivo `Dashboard_Logistica.pbix` y ejecutamos el archivo o bien abrir la página web [Dashboard_Logistica](https://app.powerbi.com/groups/me/reports/0f356bfb-4040-43ca-a716-4d53d6f4dc8b/1c4bdc23041da9952e57?experience=power-bi).
+8. Finalizamos el proyecto con la carpeta  Notebooks abrimos el archivo `Dashboard_Logistica.pbix` y ejecutamos el archivo o bien abrir la página web ["Más alla del reloj"](https://app.powerbi.com/groups/me/reports/0f356bfb-4040-43ca-a716-4d53d6f4dc8b/1c4bdc23041da9952e57?experience=power-bi).
