@@ -28,7 +28,7 @@ Este proyecto descompone la complejidad de los retrasos en la cadena de suminist
 <a id="objetivo"></a>
 ## Objetivo del proyecto
 
-El objetivo del proyecto es determinar mediante evidencia estadística el impacto real que tienen las variables externas como el clima, como también las variables internas como el peso, distancia, detenciones, etc. en los minutos de retraso de la logística de la empresa. El fin es cuantificar el *porcentaje de influencia* de cada factor para priorizar inversiones operativas y reducir el tiempo de retraso.
+El objetivo del proyecto es determinar mediante evidencia estadística el impacto real que tienen las variables externas e internas como son el clima, el peso, la distancia, las detenciones, etc. en los minutos de retraso de la logística de la empresa. El fin es cuantificar el *porcentaje de influencia* de cada factor para priorizar inversiones operativas y reducir el tiempo de retraso.
 
 ---
 
@@ -47,7 +47,7 @@ Necesario para ejecutar el proyecto:
 
 Se centra en las operaciones de carga y descarga en 7 ciudades (New York, Miami, Portland, Los Angeles, Houston, Detroit y Kansas City). 
 
-El problema es que a pesar de tener rutas estandarizadas, los retrasos promedio superan los 70 minutos por evento y el 77% de los eventos presentan retrasos. Se planteá la hipótesis de que el clima y el tráfico son factores claves; este análisis busca confirmar o desmentir esta hipótesis mediante evidencia estadística. El objetivo es poder reducir de manera significativa los retrasos y mejorar la eficiencia operativa. 
+El problema es que a pesar de tener rutas estandarizadas, los retrasos promedio superan los 70 minutos por evento y el 77% de los eventos presentan retrasos. Se planteá la hipótesis de que el clima y el peso de la carga son factores claves; este análisis busca confirmar o desmentir esta hipótesis mediante evidencia estadística. El objetivo es poder reducir de manera significativa los retrasos y mejorar la eficiencia operativa. 
 
 ---
 
@@ -60,12 +60,12 @@ Detallaremos de donde sacamos los datos relevantes de nuestro análisis.
 - Primero: Dataset de operaciones logísticas de la empresa es tomado de Kaggle. Este entrega 14 data set de los cuales se seleccionan 7 para el análisis sobre como influyen los diferentes factores en los retrasos de los eventos de carga y descarga.
 Cada data set tiene sus características propias:
    1. `eventos_entregas.csv`: se tienen 170 820 datos de los cuales nos quedamos con los eventos de carga y descarga de las 7 ciudades que hemos elegido por su ubicación geográfica y por su cantidad de habitantes, quedando con 66 416 eventos.
-   2. `viajes.csv`: 
-   3. `cargas.csv`:
-   4. `clientes.csv`:
-   5. `rutas.csv`:
-   6. `compras_combustible.csv`:
-   7. `incidentes_seguridad.csv`:
+   2. `viajes.csv`: se tiene un total de 85 410 viajes que contiene la fecha del despacho, la distancia, horas de ralentí, etc.
+   3. `cargas.csv`: se tiene un total de 85 410 cargas que contienen su peso, ruta, tipo de carga, recargo de combustible, etc.
+   4. `clientes.csv`:se tiene un data set con 107 clientes que se clasifican en 3 tipos, su potencial ingreso, etc.
+   5. `rutas.csv`: se tiene un data set con 58 rutas diferentes que contienen información sobre la distancia, tarifa de combustible, tiempo de demora en días, etc.
+   6. `compras_combustible.csv`: se tiene un data set con 196 442 compras de combustible que contienen la fecha de compra, la cantidad de galones comprados, el precio por galón, etc.
+   7. `incidentes_seguridad.csv`: se tiene un data set con 170 incidentes de seguridad que contienen la fecha del incidente, la causa, el nivel de gravedad, el monto de reclamación, etc.
 
 - Segundo: Datos climáticos históricos integrados vía API de la página [Visual Crossing](https://www.visualcrossing.com/) donde descargamos los datos desde 01-01-2022 hasta 02-01-2025 de las 7 ciudades seleccionadas, obteniendo datos de temperatura, humedad, precipitación, viento, etc. Como las descargas gratuitas tienen un límite de 1000 requests por día, se tuvo que descargar los datos en partes, quedando un total de 7 672 registros de clima en el dataset `Clima.csv`.
 
@@ -194,7 +194,21 @@ En esta carpeta te encontraras con:
 <a id="sql"></a>
 ## Carpeta: SQL
 
-Contiene los scripts SQL para la creación del esquema de base de datos y consultas complejas para unir la tabla de logística con los datos climáticos y los diferentes datasets de la empresa. Uniendo los siete en un solo archivo csv.
+En esta carpeta encontraras:
+- `traspasosql.ipynb`: Notebook con el código para el traspaso de los datos limpios a SQL para realizar el análisis.
+- `df_carga_estudio.csv`: Dataset final con los datos limpios para SQL.
+- `df_clientes_estudio.csv`: Dataset final con los datos limpios para SQL.
+- `df_combustible_estudio.csv`: Dataset final con los datos limpios para SQL.
+- `df_incidente_estudio.csv`: Dataset final con los datos limpios para SQL.
+- `df_rutas_estudio.csv`: Dataset final con los datos limpios para SQL.
+- `df_union_estudio.csv`: Dataset final con los datos limpios para SQL.
+- `df_viajes_estudio.csv`: Dataset final con los datos limpios para SQL.
+- `estudio.sql`: Queries SQL para crear las tablas en la base de datos.
+- `diagrama_log.mwb`: Diagrama de la base de datos en MySQL Workbench.
+- `diagrama.png`: Imagen del diagrama de la base de datos.
+- `incidentes.csv`: Dataset con los datos de incidentes realizado en SQL para usar en el dashboard y en el reporte.
+- `UNION.csv`: Dataset con los datos que se usaron en SQL para crear los KPIs en el reporte.
+
 
 ---
 <a id="power-bi"></a>
@@ -210,6 +224,21 @@ En esta carpeta encontraras:
 
 En la carpeta de HIPOTESIS_KPI en el archivo `Hipotesis_KPI.ipynb` se encuentra el análisis detallado del estudio, se adjunta el detalle del  KPIs e hipótesis planteadas en el proyecto.
 
+### Análisis KPIs:
+- KPI 1: Tiempo de entrega promedio: comparamos fecha programada vs fecha real
+- KPI 2: Tiempo de retraso: Promedio de la diferencia entre el retraso y las condiciones climáticas
+- KPI 3: Relación impacto clima vs costo: Comparamos el impacto del clima versus el costo logístico asociado.
+- KPI 4: Frecuencia de incidentes según el tipo de precipitación: de los incidentes identificados, se analiza la frecuencia según el tipo de precipitación y se determina la causa.
+
+### Hipótesis:
+- Hipótesis 1: "Las condiciones climáticas afectan el tiempo de detención en las ciudades del norte comparado con el Sur"
+- Hipótesis 2: "El tipo de carga principal influye en el coste logístico y en el tiempo de retraso"
+- Hipótesis 3: "Las temperaturas extremas incrementan significativamente las horas de ralentí"
+- Hipótesis 4: "Las condiciones climaticas como lluvia, visibilidad,temperatura y humedad aumentan los retrasos"
+- Hipótesis 5: "Las cargas pesadas generan más detenciones y retrasos"
+- Hipótesis 6: "Distancias mayores estan asociadas a mayores retrasos"
+- Hipótesis 7: "Más detenciones causan retrasos significativos"
+- Hipótesis 8: "La temperartura tiene un impacto negativo en los retrasos"
 ---
 <a id="resultados-insights"></a>
 ## Resultados / Insights
@@ -219,9 +248,10 @@ En la carpeta de HIPOTESIS_KPI en el archivo `Hipotesis_KPI.ipynb` se encuentra 
 Los hallazgos más relevantes del proyecto son:
 
 - El "Retraso Base" es Estructural: Se descubrió una constante estadística de ~72-79 minutos que ocurre independientemente de cualquier variable externa. El problema es el proceso inicial de despacho.
-- El Peso no influye: Con un p-valor de 0.557, se descarta que el peso de la carga afecte los tiempos de entrega.
-- Sensibilidad Térmica: El frío impacta más que el calor; las bajas temperaturas correlacionan con mayores demoras.
+- El Peso no influye: Se descarta que el peso de la carga afecte los tiempos de entrega.
+- Sensibilidad Térmica: El frío impacta más que el calor; las bajas temperaturas correlacionan con mayores demoras, pero no de manera significativa.
 - Visibilidad: Es el factor meteorológico más crítico para la seguridad y el cumplimiento de horarios.
+-  Los datos señalan un retraso estructural de ~72 minutos por evento, lo que sugiere ineficiencias críticas en los procesos de despacho o recepción (carga/descarga/papeleo). Se recomienda centrar los esfuerzos en optimizar los tiempos en muelle en lugar de intentar mejorar las rutas de tránsito.
 
 
 
@@ -244,7 +274,9 @@ Con un 77% de retrasos constantes y un retraso base de ~75 minutos identificado 
 
 **Próximos pasos**
 
-- Teniendo en cuenta estos análisis del proyecto se espera que la empresa priorice las inversiones operativas que se realizan en la empresa, mejorando al 100% la puntualidad de los camiones. Creando un sistema de monitoreo continuo para mantener y mejorar los niveles de servicio. Además se sugieren estas acciones:
+- Teniendo en cuenta estos análisis del proyecto se espera que la empresa priorice las inversiones operativas que se realizan en la empresa, mejorando al 100% la puntualidad de los camiones. Creando un sistema de monitoreo continuo para mantener y mejorar los niveles de servicio. 
+
+Además se sugieren estas acciones:
 
   - Logística: Aumentar los márgenes de tiempo en todas las rutas, especialmente en las Norte (durante el invierno) para evitar penalizaciones por retrasos validados.
   - Seguridad: Reforzar la conducción defensiva en días despejados, que es cuando ocurren los siniestros financieramente más críticos. Tal vez implementar un programa de capacitación especializada.
