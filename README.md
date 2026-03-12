@@ -1,5 +1,5 @@
-# Proyecto : 
-"Más allá del reloj: análisis multivariante de la logística empresarial estadounidense"
+Proyecto:
+# "Más allá del reloj: análisis multivariante de la logística empresarial estadounidense"
 
 Este proyecto descompone la complejidad de los retrasos en la cadena de suministro mediante un modelo de regresión lineal multivariante (OLS). Al analizar siete nodos estratégicos, desde el dinamismo industrial de Detroit y Houston hasta los puntos de entrada clave en Nueva York, Miami y Los Ángeles, sin olvidar la conectividad de Portland y Kansas City, la investigación logra aislar el peso real de las variables ambientales, operativas y estructurales. El resultado es una herramienta diagnóstica que transforma datos crudos en decisiones tácticas para optimizar la puntualidad.
 
